@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
     <script src="js/prefixfree.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper/swiper.min.js"></script>
@@ -29,6 +32,44 @@
 </head>
 
 <body>
+
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-box modal-front">
+                <i class="fas fa-coffee"></i>
+                <h1> OSULLOC </h1>
+                <h2>이 사이트는 스터디용으로 제작되었으며<br>
+                    리소스는 원저작자에게 있습니다.</h2>
+                <span>본 사이트는 Chrome에 최적화 되어있습니다.</span>
+            </div>
+
+            <div class="modal-box modal-back">
+                <ul class="modal-list">
+                    <h3><i class="fas fa-check"></i> <u>이렇게 수정하였습니다</u> :) </h3>
+                    <li>1. UX 편의성을 향상시키기 위해 <b>주메뉴 및 서브메뉴에 마우스 롤오버시 포커스 유지</b> 기능을 추가하였습니다.
+                </ul>
+                <ul class="modal-list">
+                    <h3><i class="fas fa-highlighter"></i> <u>다음 내용을 적용하였습니다</u> :) </h3>
+                    <li>1. <b>쿠키</b>를 생성하고, 팝업창에 <b>하루 동안 보지 않기</b> 기능을 구현하였습니다.</li>
+                    <li>2. JavaScript를 이용하여 <b>타이머</b>를 생성하였습니다.</li>
+                </ul>
+
+            </div>
+
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- 팝업창 -->
+    <div class="popup">
+        <div class="popup-wrap">
+            <img src="images/popup.jpeg" alt="배송팝업창">
+            <div class="popup-text">
+                <span class="no-today">오늘 하루 안보기</span>
+                <span class="popup-close">닫기</span>
+            </div>
+        </div>
+    </div>
 
     <div class="coupon">
         <p>지금 가입하면 3천원 할인쿠폰 증정 <img src="images/btn_close_banner.png" class="coupon-close"></p>
@@ -548,7 +589,8 @@
                         <span class="discount"></span>
                         <p>오늘 하루만 이 가격으로 구매할 수 있는 상품을 지금 바로 만나보세요.</p>
                         <span class="today-prod">세작 80g(잎차)</span>
-                        <span class="today-price">28,000원</span><span class="item-price-del">40,000원</span><span class="today-discount">30% 할인</span>
+                        <span class="today-price">28,000원</span><span class="item-price-del">40,000원</span><span
+                            class="today-discount">30% 할인</span>
 
                         <a href="#" class="link-more">구매하기</a>
                     </div>
